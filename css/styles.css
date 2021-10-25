@@ -1,0 +1,907 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*Header*/
+
+@media (min-width: 768px) {
+  .barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.site-header {
+  background-image: url(../assets/avion-ala.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 550px;
+}
+
+.acerca-header {
+  background-image: url(../assets/avion-ala3.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 550px;
+}
+
+.destinos-header {
+  background-image: url(../assets/destinos.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 550px;
+}
+
+.encontranos-header {
+  background-image: url(../assets/encontranos.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 550px;
+}
+
+.contacto-header {
+  background-image: url(../assets/contacto.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 550px;
+}
+
+/* @media (min-width: 768px) {
+    .site-header {
+        
+    }
+} */
+
+.site-header a {
+  color: black;
+  text-decoration: none;
+}
+
+.acerca-header a {
+  color: black;
+  text-decoration: none;
+}
+
+.destinos-header a {
+  color: black;
+  text-decoration: none;
+}
+
+.encontranos-header a {
+  color: white;
+  text-decoration: none;
+}
+
+.contacto-header a {
+  color: black;
+  text-decoration: none;
+}
+
+.site-header img {
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.acerca-header img {
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.destinos-header img {
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.encontranos-header img {
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacto-header img {
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media (min-width: 768px) {
+  .site-header img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .acerca-header img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .destinos-header img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .encontranos-header img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacto-header img {
+    width: 50%;
+  }
+}
+
+/* Barra de navegacion*/
+
+.navbar a {
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  padding: 2px;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar a:hover {
+  color: rgb(219, 168, 1);
+  width: 100%;
+  font-size: 25px;
+}
+
+@media (min-width: 768px) {
+  .navbar a {
+    display: inline;
+    margin-right: 5px;
+  }
+  .navbar a:last-of-type {
+    margin-right: 35px;
+  }
+}
+
+/*Header texto*/
+
+.texto-header {
+  color: black;
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .texto-header {
+    margin-top: 130px;
+  }
+}
+
+.texto-header h2 {
+  font-family: "Yellowtail", cursive;
+  font-size: 80px;
+  color: rgb(199, 6, 6);
+}
+
+.texto-header p {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: rgb(199, 6, 6);
+}
+
+/*Animacion avion*/
+#avion {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #avion {
+    display: flex;
+  }
+  #avion {
+    position: absolute;
+    width: 200px;
+    top: 30px;
+    left: 140px;
+  }
+  @keyframes avion {
+    0% {
+      left: 0%;
+      top: 75px;
+    }
+    25% {
+      left: 25%;
+      top: 75px;
+    }
+    50% {
+      left: 50%;
+      top: 75px;
+    }
+    75% {
+      left: 75%;
+      top: 75px;
+    }
+    100% {
+      left: 100%;
+      top: 75px;
+    }
+  }
+  #avion {
+    animation: avion 15s infinite linear;
+  }
+}
+/* Fin Animacion avion*/
+
+.container {
+  background-image: url(../assets/paven.png);
+}
+
+/*Mas sobre nosotros*/
+
+.contenedor-seccion h2 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  margin-top: 0px;
+  padding-top: 30px;
+  color: #000000;
+}
+
+.info-nosotros::after {
+  content: "";
+  display: block;
+  margin: auto;
+  margin-top: 0px;
+  width: 150px;
+  height: 3px;
+  background: #000000;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .iconos-nosotros {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.icono {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .icono {
+    flex-basis: calc(33.3% - 10px);
+  }
+}
+
+.icono img {
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.icono h3 {
+  text-transform: uppercase;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.icono p {
+  font-size: 18px;
+  margin: 0px 10px 0px 10px;
+}
+
+/*Ofertas*/
+
+@media (min-width: 768px) {
+  .contenedor-ofertas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+.ofertas {
+  border: 2px solid #757373;
+  width: 350px;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 3px 12px 12px rgb(94, 93, 93);
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: rgb(228, 231, 235);
+}
+
+@media (min-width: 768px) {
+  .ofertas {
+    flex-basis: 0 0 calc(23% - 10px);
+  }
+}
+
+.lugar {
+  height: 70%;
+}
+
+.ofertas img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.seccion-contenedor h2 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  margin-top: 55px;
+  color: rgb(219, 168, 1);
+}
+.quienes h2 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  margin-top: 0px;
+  color: rgb(219, 168, 1);
+  padding-top: 55px;
+}
+
+.seccion-contenedor .continentes {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  margin-top: 0px;
+  color: rgb(0, 0, 0);
+  padding-top: 20px;
+}
+
+
+
+.quienes p {
+  font-size: 18px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.quienes-contenedor {
+  position: relative;
+  width: 90%;
+  padding: 0px 20px 10px;
+  margin: 30px auto 30px;
+  box-shadow: 5px 12px 12px rgb(94, 93, 93);
+  background-color: rgb(228, 231, 235);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgb(110, 110, 110);
+  align-items: center;
+}
+
+.after::after {
+  content: "";
+  display: block;
+  margin: auto;
+  margin-top: 0px;
+  width: 150px;
+  height: 3px;
+  background: rgb(219, 168, 1);
+  margin-bottom: 45px;
+}
+
+.cant-noches {
+  margin-bottom: 20px;
+}
+
+.noches {
+  width: 90px;
+  border: solid #000000 1px;
+  margin-top: -15px;
+  margin-left: 5px;
+  border-radius: 5px;
+  background-color: rgb(38, 3, 70);
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contenido-oferta h4 {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-left: 15px;
+  color: rgb(78, 78, 78);
+}
+
+.contenido-oferta h3 {
+  text-align: center;
+  font-size: 33px;
+  font-family: "Poppins", sans-serif;
+}
+
+.precio {
+  font-size: 25px;
+  color: rgb(21, 95, 53);
+  font-weight: bold;
+  text-align: center;
+}
+
+.contenido-oferta a {
+  font-size: 20px;
+  text-decoration: none;
+  background-color: rgb(155, 153, 153);
+  padding: 10px 15px 10px 15px;
+  color: rgb(180, 4, 4);
+  border-radius: 10px;
+  position: absolute;
+  margin-left: 124px;
+  margin-top: 7px;
+}
+
+/*Contacto Home*/
+
+.imagen-contacto {
+  background-image: url(../assets/aeropuerto2.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  margin-top: 40px;
+}
+
+.contenido-contacto {
+  flex: 0 0 95%;
+  color: #ffffff;
+}
+
+.contenido-contacto h2 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  margin-top: 5px;
+  color: rgb(219, 168, 1);
+}
+
+.contenido-contacto h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.contenido-contacto p {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.boton {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  /* display: inline-block; */
+  text-align: center;
+  border: none;
+  display: block;
+  flex: 0 0 100%;
+  background-color: #e08709;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .boton {
+    display: inline-block;
+    flex: 0 0 auto;
+    margin-left: 45%;
+  }
+}
+
+.boton:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .contenedor-clientes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+/*Testimonios*/
+
+.seccion-clientes h2 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  margin-top: 55px;
+  color: rgb(219, 168, 1);
+}
+
+.after::after {
+  content: "";
+  display: block;
+  margin: auto;
+  margin-top: 0px;
+  width: 150px;
+  height: 3px;
+  background: rgb(219, 168, 1);
+  margin-bottom: 45px;
+}
+
+.clientes {
+  border: 2px solid #757373;
+  width: 350px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 3px 12px 12px rgb(94, 93, 93);
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: rgb(228, 231, 235);
+}
+
+@media (min-width: 768px) {
+  .clientes {
+    flex-basis: 0 0 calc(23% - 10px);
+  }
+}
+
+.persona {
+  height: 70%;
+}
+
+.persona img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nombre {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.testimonio {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/*Footer*/
+
+.footer {
+  width: 100%;
+  /* height: 800px; */
+  background-color: rgb(107, 106, 106);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .contenido-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.contenido-footer {
+  margin: 40px;
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    flex: 0 0 calc(30% - 10px);
+  }
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgb(219, 168, 1);
+  transition: all 300ms;
+}
+
+.footer h5 {
+  display: block;
+  background-image: url(../assets/pxgray.png);
+  height: auto;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  line-height: 55px;
+  color: black;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-shadow: 3px 12px 12px rgb(59, 59, 59);
+}
+
+.footer ul {
+  text-align: left;
+  margin: 20px;
+  font-size: 20px;
+  color: black;
+}
+
+.footer ul li {
+  margin-top: 10px;
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+
+.footer ul li a {
+  display: block;
+  height: 40px;
+  transition: all 300ms;
+}
+
+.footer ul li:hover a {
+  padding-left: 15px;
+  color: black;
+  width: 100%;
+  font-size: 25px;
+}
+
+.footer iframe {
+  width: 100%;
+  height: 300px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 3px 12px 12px rgb(59, 59, 59);
+}
+
+.footer img {
+  margin-bottom: 15px;
+}
+
+.footer .redes img {
+  width: 45px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .contenido-footer > div {
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 20px;
+  }
+  .footer h5 {
+    font-size: 25px;
+  }
+
+  .footer img {
+    margin-bottom: 15px;
+    max-width: 100%;
+  }
+}
+
+
+/*Econtranos*/
+
+@media (min-width: 768px) {
+  .contenedor-continente {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+/* .contenedor-continente {
+  border: 2px solid #757373;
+  width: 95%;
+  height: 500px;
+  overflow: hidden; 
+  border-radius: 15px;
+  box-shadow: 3px 12px 12px rgb(94, 93, 93);
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-color: rgb(228, 231, 235);
+  
+  align-items: center;
+} */
+
+/* @media (min-width: 768px) {
+  .miami {
+    flex-basis: 0 0 calc(50% - 10px);
+  }
+} */
+
+h3 {
+  font-size: 40px;
+  color: rgb(219, 168, 1);
+  margin-bottom: 10px;
+  margin-top: auto;
+  text-align: center;
+}
+
+.after::after {
+  content: '';
+  display: block;
+  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-top: 0px;
+  width: 100px;
+  height: 2px;
+  background: rgb(219, 168, 1);
+  margin-bottom: 45px;
+}
+
+.parrafo p {
+  font-size: 25px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.america-norte h5 {
+  font-size: 25px;
+  margin: 25x;
+  margin-top: 25px;
+  padding: 5px;
+  text-align: left;
+}
+
+.america-sur h5 {
+  font-size: 25px;
+  margin: 25x;
+  margin-top: 25px;
+  padding: 5px;
+  text-align: left;
+}
+
+.europa h5 {
+  font-size: 25px;
+  margin: 25x;
+  margin-top: 25px;
+  padding: 5px;
+  text-align: left;
+}
+
+.asia h5 {
+  font-size: 25px;
+  margin: 25x;
+  margin-top: 25px;
+  padding: 5px;
+  text-align: left;
+}
+
+.asia:last-of-type {
+  margin-bottom: 30px;
+}
+
+/*Contacto*/
+
+form {
+  width: 450px;
+  margin: auto;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.464);
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  box-shadow: 3px 12px 12px rgb(59, 59, 59);
+}
+
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+#boton {
+  background: #3e4353;
+  color: #fff;
+  padding: 20px;
+}
+
+#boton:hover {
+  cursor: pointer;
+  color: rgb(219, 168, 1);
+  width: 100%;
+  font-size: 25px;
+}
+
+@media (max-width: 480px) {
+  form{
+    width: 100%;
+  }
+}
+
+.contenedor-form h2 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 25px;
+}
+
+
+
+
+
+/* .contenedor-form {
+  width: 50px;
+  margin: 0 auto;
+  background-color: #2c2c2c;
+  padding: 30px;
+}
+
+.contenedor-form h2 {
+  font-size: 24px;
+}
+
+.contenedor-form .form {
+  margin-top: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+  margin-top: 2px;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 35px;
+}
+
+textarea {
+  height: 80px;
+}
+
+input[type="submit"] {
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  background: #144c83;
+  background-image: linear-gradient(#144c83, #2da8ea);
+  float: left;
+  border: 0;
+}
+
+input[type="submit"]:hover {
+  background-image: linear-gradient(#2da8ea, #144c83);
+  color: #e7e7e7;
+}
+
+@media (min-width: 768px) {
+  .contenedor-form {
+    width: 60%;
+    margin: 0 auto;
+  }
+} */
